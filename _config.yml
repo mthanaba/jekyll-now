@@ -9,7 +9,7 @@ name: B&M Adventures
 description: Young couple figuring out life, one adventure at a time....
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: site.baseurl/images/20201128_102650.jpg
+avatar: jekyll-now/images/20201128_102650.jpg
 
 #
 # Flags below are optional

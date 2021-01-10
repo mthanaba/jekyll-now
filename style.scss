@@ -153,16 +153,13 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: $lightRed;
+  border-bottom: 1px solid #ddd;
 }
 
 .masthead {
   padding: 20px 0;
   // border-bottom: 1px solid $lightGray;
-  // margin-top: 50px;
-  // border-top: 1px solid #ddd;
-  // border-bottom: 1px solid #ddd;
-  background-color: $lightRed;
-
   @include mobile {
     text-align: center;
   }

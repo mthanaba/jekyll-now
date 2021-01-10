@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<p class="site-description">This page shows a list of all blog posts on this site!</p>
+<h1>{{ page.page-description }}</h1>
+<div class="entry">
+  {{ content }}
+</div>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">

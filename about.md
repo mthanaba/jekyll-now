@@ -18,6 +18,6 @@ Adventures represent not just our physical travels as it also encompasses all th
 -The Ride (to satisfy M)
 
 
-### Follow us!
+### Journey So Far!
 
-<maybe inlcude instagram here?>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=10itpXIcVQfNGhmcbG1ZPCr_s9Pg36MQJ" width="640" height="440"></iframe>

@@ -20,4 +20,4 @@ Adventures represent not just our physical travels as it also encompasses all th
 
 ### Journey So Far!
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=10itpXIcVQfNGhmcbG1ZPCr_s9Pg36MQJ" width=100% height="440"></iframe>
+<iframe class="map-style" src="https://www.google.com/maps/d/embed?mid=10itpXIcVQfNGhmcbG1ZPCr_s9Pg36MQJ" height="480"></iframe>

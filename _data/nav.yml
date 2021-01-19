@@ -1,0 +1,7 @@
+#This file contains the nav contents in header just add to list for more
+- name: Home
+  link: {{ site.baseurl }}/
+- name: Blog
+  link: {{ site.baseurl }}/blog
+- name: About
+  link: {{ site.baseurl }}/about

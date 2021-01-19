@@ -12,9 +12,9 @@
         </div>
         
         <nav>
-          <a href="{{ site.baseurl }}/">Home</a>
-          <a href="{{ site.baseurl }}/blog">Blog</a>
-          <a href="{{ site.baseurl }}/about">About</a>
+        {% for item in site.data.nav %}
+          <a href="{{ item.link }}"> {{ item.name }} </a>
+        {% endfor %}
         </nav>
       </header>
     </div>

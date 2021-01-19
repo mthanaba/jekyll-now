@@ -1,5 +1,5 @@
 #This file contains the nav contents in header just add to list for more
 - name: Home
-  link: /
+  link: {{ site.baseurl }}/
 - name: About
   link: /about.html

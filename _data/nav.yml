@@ -5,3 +5,5 @@
   link: {{ site.baseurl }}/blog
 - name: About
   link: {{ site.baseurl }}/about
+- name: Test Link
+  link: {{ site.baseurl }}/

@@ -3,24 +3,31 @@ layout: default
 ---
 
 <article class="post">
+  <!--Cover image-->
+  {% if page.cover-img %}
+    <div class = "post-cover-img">
+      {{page.cover-img}}
+    </div>
+  {% endif %}
+
   <h1>{{ page.title }}</h1>
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
     <!--Only if author assigned in post, for link to work need to create page name "author"_post.html in root-->
     {% if page.author %}
-    by, <a href="{{ site.baseurl }}/{{page.author}}_posts">{{page.author}}</a>
+      by, <a href="{{ site.baseurl }}/{{page.author}}_posts">{{page.author}}</a>
     {% endif %}
   </div>
 
   {% if page.tags.size > 0 %}
-  <div class="post-tags">
-    Tags:
-    <!--To create page for each tag to be referenced, xxxx_tag_page.html-->
-    {% for tag in page.tags %} 
-    <a href="{{ site.baseurl }}/blog/{{tag}}_tag_page"> {{tag}}</a>
-    {% endfor %}
-  </div>
+    <div class="post-tags">
+      Tags:
+      <!--To create page for each tag to be referenced, xxxx_tag_page.html-->
+      {% for tag in page.tags %} 
+      <a href="{{ site.baseurl }}/{{tag}}_tag_page"> {{tag}}</a>
+      {% endfor %}
+    </div>
   {% endif %}
 
   <div class="entry">

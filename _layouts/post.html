@@ -13,9 +13,13 @@ layout: default
     {% endif %}
   </div>
 
-  {% if page.tags %}
+  {% if page.tags.size > 0 %}
   <div class="post-tags">
-    Tags: {% for tag in page.tags %} {{tag}} {% endfor %}
+    Tags:
+    <!--To create page for each tag to be referenced, xxxx_tag_page.html-->
+    {% for tag in page.tags %} 
+    <a href="{{ site.baseurl }}/{{tag}}_tag_page"> {{tag}}</a>
+    {% endfor %}
   </div>
   {% endif %}
 

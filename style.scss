@@ -159,8 +159,20 @@ img {
   .post-tags {
     font-style: italic;
     color: $gray;
+    a {
+      color: inherit;
+      padding: 0 0.3125rem;
+      opacity: 0.8;
+      border: 1px solid transparent;
+      border-radius: 0.1875rem; 
+      &:hover, &:active {
+        opacity: 1;
+        color: $black;
+        border-color: $black;
+      } 
+    }
   }
-  
+
 //***********************
 //
 // .masthead

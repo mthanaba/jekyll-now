@@ -7,10 +7,14 @@ layout: default
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
-    <!--For link to work need to create page name "author"_post.html in root-->
+    <!--Only if author assigned in post, for link to work need to create page name "author"_post.html in root-->
     {% if page.author %}
     by, <a href="{{ site.baseurl }}/{{page.author}}_posts">{{page.author}}</a>
     {% endif %}
+  </div>
+
+  <div class="tags">
+    Tags: {{page.tags}}
   </div>
 
   <div class="entry">

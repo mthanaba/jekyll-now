@@ -5,9 +5,10 @@ layout: default
 <article class="page">
 
   <h1>{{ page.title }}</h1>
-
+<!--Check if this is a tag_page-->
   {% if page.tag_page %}
     <p>This page shows all posts that have been tagged with the tag, <b>{{page.tag_page}}</b>. </p>
+    {% include tag-page-filter.html %}  
   {% endif %}
 
   <div class="entry">

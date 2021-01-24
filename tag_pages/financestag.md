@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Finances
-permalink: /financestag/
+permalink: /tag_pages/financestag/
 ---
 
 A young couple figuring out life one adventure at a time..... well that's the tagline that was excecutively  decided upon by M when he took forever to set up this site. 

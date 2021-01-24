@@ -2,6 +2,7 @@
 layout: page
 title: Finances
 permalink: /tag/finances/
+tag_page: finances
 ---
 
 A young couple figuring out life one adventure at a time..... well that's the tagline that was excecutively  decided upon by M when he took forever to set up this site. 

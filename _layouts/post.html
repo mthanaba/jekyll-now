@@ -23,9 +23,9 @@ layout: default
   {% if page.tags.size > 0 %}
     <div class="post-tags">
       Tags:
-      <!--To create page for each tag to be referenced, xxxx_tag_page.html-->
+      <!--To create page in tag_pages for each tag page to be referenced, permalink -> /post/xxxxtags/-->
       {% for tag in page.tags %} 
-      <a href="{{ site.baseurl }}/tag_pages/{{tag}}tag"> {{tag}}</a>
+      <a href="{{ site.baseurl }}/posts/{{tag}}tag"> {{tag}}</a>
       {% endfor %}
     </div>
   {% endif %}

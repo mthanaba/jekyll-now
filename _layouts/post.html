@@ -13,13 +13,24 @@ layout: default
     {% endif %}
   </div>
 
-  <div class="tags">
-    Tags: {{page.tags}}
+  {% if page.tags %}
+  <div class="post-tags">
+    Tags: {% for tag in page.tags %} {{tag}} {% endfor %}
   </div>
+  {% endif %}
 
   <div class="entry">
     {{ content }}
   </div>
+
+{% if page.tags.size > 0 %}
+<div class="post-tags">
+  <span>Tags:</span>
+  {% for tag in page.tags %}
+    <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+  {% endfor %}
+</div>
+{% endif %}
 
   {% include disqus.html %}
 </article>

@@ -3,7 +3,7 @@ layout: post
 title: You're up and running!
 date: 2021-01-10
 author:
-tags: [the ride]
+tags: [ride]
 output: false
 ---
 

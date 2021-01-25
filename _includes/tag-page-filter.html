@@ -13,6 +13,14 @@
                 <article class="post">
             
                     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+                    <div class="date">
+                        Written on {{ post.date | date: "%B %e, %Y" }}
+                        <!--Only if author assigned in post, for link to work need to create page name "author"_post.html in root-->
+                        {% if post.author %}
+                          by, <a href="{{ site.baseurl }}/{{post.author}}_posts">{{post.author}}</a>
+                        {% endif %}
+                    </div>
             
                     <div class="entry">
                     {{ post.excerpt }}
@@ -20,11 +28,11 @@
             
                     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
                     
-                    <div class="post-tags">
+                    <div class="post-tags">  
                     Tags:
-                    {% for tags in post.tags %} 
+                    {%- for tags in post.tags -%} 
                         <a href="{{ site.baseurl }}/tag/{{tags}}"> {{tags}}</a>
-                        {% endfor %}
+                    {%- endfor -%}
                     </div>
 
                 </article>

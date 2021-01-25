@@ -1,7 +1,4 @@
 <!--This file contains the code for filtering posts by the assigned tags -->
-<!-- defining selected tag -->
-{% assign selected_tag = page.tag_page %}
-
 <!--Loop through all posts and display posts with the selected tag-->
 <div class="posts">
 <!--Loop through all posts on site-->
@@ -10,32 +7,8 @@
         {% for tag in post.tags %}
 <!--If post has selected tag than print the below-->
             {% if selected_tag == tag %}
-                <article class="post">
-            
-                    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-                    <div class="date">
-                        Written on {{ post.date | date: "%B %e, %Y" }}
-                        <!--Only if author assigned in post, for link to work need to create page name "author"_post.html in root-->
-                        {% if post.author %}
-                          by, <a href="{{ site.baseurl }}/{{post.author}}_posts">{{post.author}}</a>
-                        {% endif %}
-                    </div>
-            
-                    <div class="entry">
-                    {{ post.excerpt }}
-                    </div>
-            
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-                    
-                    <div class="post-tags">  
-                    Tags:
-                    {%- for tags in post.tags -%} 
-                        <a href="{{ site.baseurl }}/tag/{{tags}}"> {{tags}}</a>
-                    {%- endfor -%}
-                    </div>
-
-                </article>
+            <!--If post has selected tag than print the below-->
+                {%- include print-post-feed.html -%}
             {% endif %}
         {% endfor %}
     {% endfor %}

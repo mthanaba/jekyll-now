@@ -1,9 +1,9 @@
 #This file contains the nav contents in header just add to list for more
 - name: Home
   link: /
-- name: Blog
-  link: /blog
 - name: About
   link: /about
-- name: Test
+- name: Blog
+  link: /blog
+- name: Locations
   link: /

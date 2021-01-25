@@ -5,10 +5,13 @@ layout: default
 <article class="page">
 
   <h1>{{ page.title }}</h1>
-  {% if page.tag_page %}
+<!--if page is a tag_page-->
+  {%- if page.tag_page -%}
+    <!-- defining selected tag_page -->
+    {% assign selected_tag = page.tag_page %}
     <p>This page shows all posts that have been tagged with the tag, <b>{{page.tag_page}}</b>. </p>
-    {% include tag-page-filter.html %}  
-  {% endif %}
+    {%- include tag-page-filter.html -%}  
+  {%- endif -%}
 
   <div class="entry">
     {{ content }}

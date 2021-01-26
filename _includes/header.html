@@ -18,7 +18,6 @@
             {%- if item.dropdown -%}
                 <div class="dropdown">
                     <a class="dropbtn" href="{{site.baseurl}}{{ item.link }}"> {{ item.name }}</a>
-                    <i class="fa fa-caret-down"></i>
                     <!--iterating through dropdown list -->
                     {%- for content-name in item.dropdown -%}
                         <!--determing index in dropdown list to match with dropdown-link list-->

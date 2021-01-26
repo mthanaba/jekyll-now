@@ -262,6 +262,7 @@ nav {
   }
 
   a {
+    float: right;
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
@@ -277,7 +278,7 @@ nav {
 }
 
 .dropdown {
-  float: none;
+  float: right;
   overflow: hidden;
 }
 

@@ -20,7 +20,7 @@
                     <a class="dropbtn" href="{{site.baseurl}}{{ item.link }}"> {{ item.name }}</a>
                     {%- for content-name in item.dropdown -%}
                         <!--determing index in dropdown list to match with dropdown-link list-->
-                        {%- assign dropdown-index = forloop.index -%}
+                        {%- assign dropdown-index = forloop.index0 -%}
                             <!--Ensuring drop down is only printed once with corresponding url-->
                             <div class="dropdown-content">
                                 <a href="{{site.baseurl}}{{ item.dropdown-link [dropdown-index] }}"> {{ content-name }} </a>

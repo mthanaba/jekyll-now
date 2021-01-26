@@ -1,4 +1,4 @@
-#This file contains the nav contents in header just add to list for more
+#This file contains the nav contents in header just add to list for more, for dropdown makes sure link corresponds to dropdown accordingly
 - name: Home
   link: /
 - name: About

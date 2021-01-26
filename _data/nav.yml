@@ -5,5 +5,7 @@
   link: /about
 - name: Blog
   link: /blog
+  dropdown: [Experiences, Finances, Ride, Stays]
+  dropdown-link: [/tag/experiences, /tag/finances, /tag/ride, /tag/stays]
 - name: Cities
   link: /

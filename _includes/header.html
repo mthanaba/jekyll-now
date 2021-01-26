@@ -15,7 +15,20 @@
         
         <nav>
         {% for item in site.data.nav %}
-          <a href="{{site.baseurl}}{{ item.link }}"> {{ item.name }} </a>
+            {% if item.dropdown %}
+                <div class="dropdown">
+                    <a class="dropbtn" href="{{site.baseurl}}{{ item.link }}"> {{ item.name }}</a>
+                    {%- for content-name in item.dropdown -%}
+                        {%- for content-link in item.dropdown-link -%}
+                            <div class="dropdown-content">
+                                <a href="{{site.baseurl}}{{ content-link }}"> {{ content-name }} </a>
+                            </div>
+                        {%- endfor -%}
+                    {%- endfor -%}
+                </div>
+            {% else %}
+                <a href="{{site.baseurl}}{{ item.link }}"> {{ item.name }} </a>
+            {% endif %}
         {% endfor %}
         </nav>
       </header>

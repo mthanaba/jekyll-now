@@ -22,7 +22,6 @@
                         <!--determing location in dropdown list-->
                         {%- assign dropdown-index = forloop.index -%}
                             <!--Ensuring drop down is only printed once with corresponding url-->
-                            if 
                             <div class="dropdown-content">
                                 <a href="{{site.baseurl}}{{ item.dropdown-link [dropdown-index] }}"> {{ content-name }} </a>
                             </div>
